@@ -11,8 +11,9 @@ func main() {
 	directory := flag.String("d", ".", "document root")
 	flag.Parse()
 
-	log.Printf("Serving %s", *directory)
+	log.Printf("Serving %s\n", *directory)
 	log.Printf("Start listening on port %s\n", *port)
+	log.Printf("On local: http://localhost:%s", *port)
 
 	err := http.ListenAndServe(":"+*port, http.FileServer(http.Dir(*directory)))
 	if err != nil {
