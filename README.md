@@ -1,7 +1,7 @@
 # file-server
 
 ```sh
-go get -u murosan.github.com/file-server
+go get -u github.com/murosan/file-server
 ```
 
 ```sh
